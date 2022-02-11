@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 20px;
+}
+.nav {
+  grid-column: 1 / 6;
+  background-color: royalblue;
+}
+.main-content {
+  grid-column: 1 / 6;
+  grid-template-rows: max-content;
+  background-color: gainsboro;
+  height: 80vh;
+}
+.footer {
+  grid-column: 1 / 6;
+  background-color: black;
+}
