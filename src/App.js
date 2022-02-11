@@ -1,9 +1,9 @@
-import './App.css';
+import Home from './components/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to Eshirali School.</h1>
+      < Home />
     </div>
   );
 }
