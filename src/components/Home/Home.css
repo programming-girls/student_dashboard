@@ -4,17 +4,18 @@ html {
 .parent {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  margin: 20px;
 }
 .nav {
   grid-column: 1 / 6;
   background-color: royalblue;
+  display: flex;
+  justify-content: space-between;
 }
 .main-content {
   grid-column: 1 / 6;
   grid-template-rows: max-content;
   background-color: gainsboro;
-  height: 80vh;
+  min-height: 80vh;
 }
 .footer {
   grid-column: 1 / 6;
