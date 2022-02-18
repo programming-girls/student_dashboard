@@ -1,17 +1,20 @@
 import React from "react";
 import { TextField } from "@mui/material";
-import { Container } from "@mui/material";
+import { Box } from "@mui/material";
+
+import { Button } from "@mui/material";
 
 const SignUp = () => {
   return (
-    <Container
+    <Box
       sx={{
         display: "flex",
         flexDirection: "column",
-        width: "75%",
+        maxWidth: "50%",
         gap: "20px",
+        margin: "auto",
       }}>
-      <h1>Sign Up</h1>
+      <h1 style={{ textAlign: "center" }}>Sign Up</h1>
       <TextField
         variant="outlined"
         label="First Name"
@@ -31,7 +34,8 @@ const SignUp = () => {
         autoFocus
       />
       <TextField variant="outlined" label="Password" autoFocus />
-    </Container>
+      <Button variant="contained">Sign Up</Button>
+    </Box>
   );
 };
 export default SignUp;
