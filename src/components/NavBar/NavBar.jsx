@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { AppBar, Typography, Toolbar, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -21,26 +21,26 @@ const CustomButton = styled(Button)(({ theme }) => ({
 
 const NavBar = () => {
   const classes = useStyles();
-  //   const history = useHistory();
+  const navigate = useNavigate();
 
-  //   const handleGetStarted = () => {
-  //     history.push("/signup");
-  //   };
+  const handleGetStarted = () => {
+    navigate("/signup");
+  };
   return (
     <>
       <AppBar className="header" position="static" color={"primary"}>
         <Toolbar>
           <Typography variant="h5" className={classes.root}>
             <h5 className={classes.linkStyle} to="/">
-              projectManagement
+              Eshiralli School
             </h5>
           </Typography>
           <CustomButton variant={"outlined"} onClick={() => handleGetStarted()}>
-            Get Started
+            <Link to="/signup">Get Started</Link>
           </CustomButton>
           <CustomButton variant={"outlined"}>
-            <Link className={classes.linkStyle} to="/signin">
-              SignIn
+            <Link className={classes.linkStyle} to="/login">
+              LogIn
             </Link>
           </CustomButton>
         </Toolbar>
