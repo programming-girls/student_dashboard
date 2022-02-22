@@ -1,4 +1,6 @@
-.header {
+.parent {
   display: flex;
-  justify-content: space-evenly;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
