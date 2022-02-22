@@ -27,12 +27,16 @@ const NavBar = () => {
             </div>
             <div className="r-side">
               <CustomButton
-                variant={"outlined"}
+                variant={"contained"}
                 onClick={() => handleGetStarted()}>
-                <Link to="/signup">Get Started</Link>
+                <Link className="link" to="/signup">
+                  Get Started
+                </Link>
               </CustomButton>
-              <CustomButton variant={"outlined"}>
-                <Link to="/login">LogIn</Link>
+              <CustomButton variant={"contained"}>
+                <Link className="link" to="/login">
+                  LogIn
+                </Link>
               </CustomButton>
             </div>
           </div>

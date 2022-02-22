@@ -4,3 +4,14 @@
   justify-content: space-between;
   align-items: center;
 }
+.r-side {
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+}
+.link {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  text-size-adjust: 10em;
+}
